@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-(tbp!@(-^zym5!6%v%4#(66is79=pi+_a01&-ma_yd$2isj^1%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [pavithra-qna.herokuapp.com]
 
 
 # Application definition
