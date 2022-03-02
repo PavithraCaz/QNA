@@ -41,9 +41,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'Landing',
-    'Home',
-    'Admin',
+    'landing',
+    'home',
+    'master',
 
 ]
 
@@ -63,7 +63,9 @@ ROOT_URLCONF = 'QNA.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [
+            os.path.join(BASE_DIR, 'landing/templates')
+            ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -126,8 +128,8 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS=[
-    os.path.join(BASE_DIR,'Landing/static/images'),
-    os.path.join(BASE_DIR,'Home/static/images'),
+    os.path.join(BASE_DIR,'landing/static/images'),
+    os.path.join(BASE_DIR,'home/static/images'),
 ]
 
 # Default primary key field type

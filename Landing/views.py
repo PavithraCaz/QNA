@@ -5,8 +5,8 @@ from django.shortcuts import render
 
 # Create your views here.
 def land1(request):
-    return render(request,'Signup.html')
-    
+    return render(request, 'Signup.html')
+
 
 def land2(request):
-    return render(request,'Login.html')
+    return render(request, 'Login.html')
