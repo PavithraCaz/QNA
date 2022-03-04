@@ -31,9 +31,9 @@
       </div>
       <div class="head-option">
         <i class="material-icons header-option-icon">
-          drive_file_rename_outline
+          view_timeline
         </i>
-        <h3>Feed</h3>
+        <h3>Timeline</h3>
       </div>
       <div class="head-option">
         <i class="material-icons header-option-icon">
@@ -75,7 +75,7 @@
           <p>Following</p>
           <p class="sidebar-stat-no">0</p>
         </div><br>
-        <div class="sidebar-st"
+        <div class="sidebar-st">
           <a class="edit" href="">Edit Profile</a>
         </div>
       </div>
@@ -120,7 +120,11 @@
           </div>
         </div>
       </div>
+      <div class="feed-bottom">
+        {% block content %} {% endblock %}
+      </div>
     </div>
+    
 
     <div class="widgets">
       <div class="widgets-header">
