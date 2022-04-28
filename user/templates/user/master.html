@@ -1,0 +1,195 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'user_static/style/style.css' %}">
+
+  <title>QNA</title>
+</head>
+
+<body>
+  <!-- side bar start -->
+  <div class="sidebar">
+    <nav>
+
+    </nav>
+    <center>
+      <img src="/static/user_static/images/caz.jpeg" id="dp">
+      <br>
+      <h2>Pavithra Caz</h2>
+    </center>
+    <br>
+
+    <div class="sidebaroption active">
+      <span class="material-icons header-option-icon">
+        home
+      </span>
+      <h3>Home</h3>
+    </div>
+    <div class="sidebaroption">
+      <span class="material-icons header-option-icon">
+        rocket_launch
+      </span>
+      <h3>Space</h3>
+
+    </div>
+    <div class="sidebaroption">
+      <span class="material-icons header-option-icon">
+        view_timeline
+      </span>
+      <h3>Timeline</h3>
+    </div>
+    <div class="sidebaroption">
+      <span class="material-icons header-option-icon">
+        notifications
+      </span>
+      <h3>Notification</h3>
+    </div>
+    <div class="sidebaroption">
+      <span class="material-icons sidebar-avatar">
+        account_circle
+      </span>
+      <h3>Profile</h3>
+    </div>
+    <div class="sidebaroption">
+      <span class="material-icons header-option-icon">
+        settings
+      </span>
+      <h3>Settings</h3>
+    </div>
+    <button class="sidebar_logout">Logout</button>
+  </div>
+  <!-- side bar end -->
+
+  <!-- feed start -->
+
+  <div class="feed" id="feed">
+    <div class="feed_head">
+      <img class="imgicon" src="/static/user_static/images/icon-q.png" alt="QNA">
+    </div>
+
+
+    <!-- ask box -->
+    {% block content %} {% endblock %}
+
+
+
+    <!-- ask end -->
+
+
+  </div>
+
+  <!-- feed end -->
+
+  <!-- widgets start -->
+  <div class="widgets">
+    <div class="inputbox">
+      <input type="search" placeholder="search" id="searchinput">
+      <div class="searchicon">
+        <i class="material-icons">search</i>
+      </div>
+      <ul class="searchresult" id="searchresult">
+        <li><i class="material-icons">search</i><a href="#">search results</a></li>
+      </ul>
+    </div>
+    <div class="widgets-header">
+      <h2>My Space</h2>
+    </div>
+    <div class="widgets-article">
+      <div class="widgets-articles-left">
+        <i class="material-icons">fiber_manual_record</i>
+      </div>
+      <div class="widgets-articles-right">
+        <h4>Pavithra Caz Space</h4>
+      </div>
+    </div>
+    <div class="widgets-article">
+      <div class="widgets-articles-left">
+        <i class="material-icons">fiber_manual_record</i>
+      </div>
+      <div class="widgets-articles-right">
+        <h4>CSS</h4>
+      </div>
+    </div>
+    
+    <div class="widgets-header">
+      <h2>Followed Space</h2>
+    </div>
+    <div class="widgets-article">
+      <div class="widgets-articles-left">
+        <i class="material-icons">fiber_manual_record</i>
+      </div>
+      <div class="widgets-articles-right">
+        <h4>AI</h4>
+      </div>
+    </div>
+    <div class="widgets-article">
+      <div class="widgets-articles-left">
+        <i class="material-icons">fiber_manual_record</i>
+      </div>
+      <div class="widgets-articles-right">
+        <h4>HTML</h4>
+      </div>
+    </div>
+    <div class="widgets-article">
+      <div class="widgets-articles-left">
+        <i class="material-icons">fiber_manual_record</i>
+      </div>
+      <div class="widgets-articles-right">
+        <h4>BOOTSTRAP</h4>
+      </div>
+    </div>
+    <div class="widgets-article">
+      <div class="widgets-articles-left">
+        <i class="material-icons">fiber_manual_record</i>
+      </div>
+      <div class="widgets-articles-right">
+        <h4>JAVASCRIPT</h4>
+      </div>
+    </div>
+    <div class="widgets-article">
+      <div class="widgets-articles-left">
+        <i class="material-icons">fiber_manual_record</i>
+      </div>
+      <div class="widgets-articles-right">
+        <h4>DJANGO</h4>
+      </div>
+    </div>
+    <div class="widgets-article">
+      <div class="widgets-articles-left">
+        <i class="material-icons">fiber_manual_record</i>
+      </div>
+      <div class="widgets-articles-right">
+        <h4>PYTHON</h4>
+      </div>
+    </div>
+    <div class="widgets-article">
+      <div class="widgets-articles-left">
+        <i class="material-icons">fiber_manual_record</i>
+      </div>
+      <div class="widgets-articles-right">
+        <h4>SQLITE</h4>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  </div>
+
+
+
+
+  <!-- widgets end -->
+
+
+</body>
+<script src="{% static 'user_script/script/script.js' %}"></script>
+
+</html>

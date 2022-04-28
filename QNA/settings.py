@@ -41,9 +41,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'landing',
-    'home',
-    'master',
+    'common',
+    'user',
+    'master'
 
 ]
 
@@ -128,8 +128,9 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS=[
-    os.path.join(BASE_DIR,'landing/static/images'),
-    os.path.join(BASE_DIR,'home/static/images'),
+    os.path.join(BASE_DIR,'common/static'),
+    os.path.join(BASE_DIR,'user/static'),
+    os.path.join(BASE_DIR,'master/static'),
 ]
 
 # Default primary key field type

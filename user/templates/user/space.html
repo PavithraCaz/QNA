@@ -1,0 +1,40 @@
+{% extends 'user/master.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+	<div class="row">
+	    
+	    <div class="col-md-8 col-md-offset-2">
+	        
+    		<h1>Create space</h1>
+    		
+    		<form action="" method="POST">
+    		    <div class="form-group">
+    		        <label for="title">Title <span class="require"></span></label><br>
+    		        <input type="text" class="form-control" name="title" />
+    		    </div>
+    		    
+    		    <div class="form-group">
+    		        <label for="description">Description</label><br>
+    		        <textarea rows="5" class="form-control" name="description" ></textarea>
+    		    </div>
+    		    
+    		    <div class="form-group">
+    		        <button type="submit" class="btn btn-primary">
+    		            Create
+    		        </button>
+    		    </div>
+    		    
+    		</form>
+		</div>
+		
+	</div>
+</div>
+<div><h1>
+    Discover New Spaces
+</h1>
+    
+</div>
+
+{% endblock %}
